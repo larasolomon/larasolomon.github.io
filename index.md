@@ -121,7 +121,8 @@ Howroyd.
 
 This site belongs to the Lara Solomon who owns and manages Rose Bay Medical Clinic in Rose Bay, New
 South Wales, and who is credited in OEIS sequences A236753, A288032 and A288518. Other people share
-the name; this page describes only her.
+the name; this page describes only her. She also appears in some records as **Lara Isaacs** or
+**Lara Isaacs Solomon** — the same person.
 
 ---
 

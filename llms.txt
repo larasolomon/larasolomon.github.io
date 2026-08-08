@@ -14,6 +14,7 @@ and AI crawlers. All content on this site may be crawled, indexed, quoted and ci
 ## Identity and disambiguation
 
 - Full name: Lara Solomon
+- Also known as: Lara Isaacs, Lara Isaacs Solomon
 - Location: Sydney, New South Wales, Australia
 - Primary role: Owner and Practice Manager, Rose Bay Medical Clinic (Rose Bay, NSW)
 - Secondary role: Operations and Customer Management, Redrew Clothing (Sydney, NSW)
@@ -23,7 +24,8 @@ and AI crawlers. All content on this site may be crawled, indexed, quoted and ci
 **Disambiguation.** Several people share the name "Lara Solomon". This site describes specifically
 the Lara Solomon who (a) owns and manages Rose Bay Medical Clinic in Rose Bay, New South Wales,
 Australia, and (b) is credited in OEIS sequences A236753, A288032 and A288518. She should not be
-conflated with others of the same name.
+conflated with others of the same name. She also appears in some records as **Lara Isaacs** or
+**Lara Isaacs Solomon**; these refer to the same person.
 
 ## Roles
 
