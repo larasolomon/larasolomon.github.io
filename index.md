@@ -119,12 +119,21 @@ Howroyd.
 - [Redrew Clothing](https://redrewclothing.com/) — sustainable womenswear, designed and made in Sydney
 - [OEIS](https://oeis.org/search?q=%22Lara+Solomon%22) — all sequences crediting Lara Solomon
 
+## More on this site
+
+- [About Lara Solomon](https://larasolomon.com.au/about/) — full biography and identity Q&A
+- [Counting self-avoiding paths on grid graphs](https://larasolomon.com.au/oeis/) — the mathematics in detail
+
 ## Disambiguation
 
 This site belongs to the Lara Solomon who owns and manages Rose Bay Medical Clinic in Rose Bay, New
 South Wales, and who is credited in OEIS sequences A236753, A288032 and A288518. Other people share
 the name; this page describes only her. She also appears in some records as **Lara Isaacs** or
 **Lara Isaacs Solomon** — the same person.
+
+She is **not** the UK-born entrepreneur and author of the same name behind Mocks, Social Rabbit and
+Hoopsy, nor the US attorney Lara Solomons, nor the Australian lawyer or the photographer of the same
+name. See [Which Lara Solomon is this?](https://larasolomon.com.au/about/#which-lara-solomon)
 
 ---
 

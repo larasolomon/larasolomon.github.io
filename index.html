@@ -72,7 +72,11 @@
       "url": "https://larasolomon.com.au/",
       "name": "Lara Solomon",
       "inLanguage": "en-AU",
-      "publisher": { "@id": "https://larasolomon.com.au/#lara" }
+      "publisher": { "@id": "https://larasolomon.com.au/#lara" },
+      "hasPart": [
+        { "@id": "https://larasolomon.com.au/about/#page" },
+        { "@id": "https://larasolomon.com.au/oeis/#page" }
+      ]
     },
     {
       "@type": "Person",
@@ -123,6 +127,7 @@
         { "@id": "https://larasolomon.com.au/#clinic" },
         { "@id": "https://larasolomon.com.au/#redrew" }
       ],
+      "owns": { "@id": "https://larasolomon.com.au/#clinic" },
       "knowsAbout": [
         "General practice administration",
         "Medical practice management",
@@ -140,8 +145,7 @@
       "sameAs": [
         "https://www.linkedin.com/in/lara-solomon-aa4a6734/",
         "https://oeis.org/wiki/User:Lara_Solomon",
-        "https://www.rosebaymedicalclinic.com.au/",
-        "https://redrewclothing.com/"
+        "https://github.com/larasolomon"
       ],
       "subjectOf": [
         { "@id": "https://oeis.org/A236753" },
@@ -213,306 +217,7 @@
 }
 </script>
 
-<style>
-  :root {
-    --ink:        #1c1a18;
-    --ink-soft:   #4a453f;
-    --ink-faint:  #6f6961;  /* 5.08:1 on --paper — WCAG AA for normal text */
-    --paper:      #faf7f2;
-    --paper-warm: #f2ede4;
-    --rule:       #e0d8cb;
-    --accent:     #6b5f4e;
-    --accent-lit: #8c7c63;
-    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ink:        #ece7df;
-      --ink-soft:   #b8b0a4;
-      --ink-faint:  #8b8377;
-      --paper:      #15140f;
-      --paper-warm: #1e1c17;
-      --rule:       #35312a;
-      --accent:     #c4b498;
-      --accent-lit: #ddcdaf;
-    }
-  }
-
-  *, *::before, *::after { box-sizing: border-box; }
-
-  html { -webkit-text-size-adjust: 100%; }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .skip {
-    position: absolute; left: -9999px;
-    background: var(--ink); color: var(--paper);
-    padding: .6rem 1rem; z-index: 10;
-  }
-  .skip:focus { left: 1rem; top: 1rem; }
-
-  .wrap {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  /* ---------- masthead ---------- */
-
-  header.masthead {
-    padding: clamp(3rem, 9vw, 6.5rem) 0 clamp(2rem, 5vw, 3.5rem);
-    border-bottom: 1px solid var(--rule);
-  }
-  .portrait {
-    display: block;
-    width: 168px;
-    height: 168px;
-    object-fit: cover;
-    border-radius: 3px;
-    margin: 0 0 2.1rem;
-    background: var(--paper-warm);
-  }
-  @media (max-width: 32rem) {
-    .portrait { width: 132px; height: 132px; margin-bottom: 1.6rem; }
-  }
-
-  .eyebrow {
-    font-family: var(--sans);
-    font-size: .72rem;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin: 0 0 1.1rem;
-  }
-  h1 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(2.7rem, 9vw, 4.4rem);
-    line-height: 1.02;
-    letter-spacing: -.02em;
-    margin: 0 0 1.2rem;
-  }
-  .standfirst {
-    font-family: var(--serif);
-    font-size: clamp(1.15rem, 2.6vw, 1.4rem);
-    line-height: 1.5;
-    color: var(--ink-soft);
-    margin: 0;
-    max-width: 34rem;
-  }
-  .standfirst strong { color: var(--ink); font-weight: 600; }
-
-  nav.sections {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem 1.6rem;
-    margin-top: 2.2rem;
-  }
-  nav.sections a {
-    font-size: .78rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    border-bottom: 0;
-    padding-bottom: 2px;
-    border-bottom: 1px solid transparent;
-  }
-  nav.sections a:hover,
-  nav.sections a:focus-visible {
-    color: var(--accent-lit);
-    border-bottom-color: var(--accent-lit);
-  }
-
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  section[id] { scroll-margin-top: 1.5rem; }
-
-  /* ---------- sections ---------- */
-
-  main { padding-bottom: 1rem; }
-
-  section {
-    padding: clamp(2.5rem, 6vw, 4rem) 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  section:last-of-type { border-bottom: 0; }
-
-  h2 {
-    font-family: var(--sans);
-    font-size: .74rem;
-    font-weight: 600;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 1.6rem;
-  }
-  h3 {
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: clamp(1.5rem, 4vw, 1.95rem);
-    line-height: 1.2;
-    letter-spacing: -.01em;
-    margin: 0 0 .5rem;
-  }
-  h3 a { color: inherit; text-decoration: none; border: 0; }
-  h3 a:hover { color: var(--accent-lit); }
-
-  .role {
-    font-size: .82rem;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin: 0 0 1.1rem;
-  }
-
-  p { margin: 0 0 1.05rem; max-width: 36rem; }
-  p:last-child { margin-bottom: 0; }
-
-  a {
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--rule);
-    transition: border-color .15s, color .15s;
-  }
-  a:hover { color: var(--accent-lit); border-bottom-color: var(--accent-lit); }
-
-  address {
-    font-style: normal;
-    font-size: .93rem;
-    color: var(--ink-soft);
-    margin-top: 1.3rem;
-    padding-left: 1rem;
-    border-left: 2px solid var(--rule);
-    line-height: 1.55;
-  }
-
-  /* ---------- sequence list ---------- */
-
-  ol.sequences { list-style: none; margin: 0; padding: 0; }
-  ol.sequences > li {
-    padding: 1.4rem 0;
-    border-top: 1px solid var(--rule);
-  }
-  ol.sequences > li:last-child { border-bottom: 1px solid var(--rule); }
-
-  .seq-id {
-    font-family: var(--mono);
-    font-size: 1.02rem;
-    letter-spacing: .01em;
-  }
-  .seq-title {
-    display: block;
-    font-family: var(--serif);
-    font-size: 1.12rem;
-    line-height: 1.4;
-    margin: .3rem 0 .55rem;
-    max-width: 33rem;
-  }
-  .seq-credit {
-    display: inline-block;
-    font-size: .8rem;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    color: var(--accent);
-    background: var(--paper-warm);
-    padding: .2rem .55rem;
-    border-radius: 2px;
-  }
-  .seq-note { font-size: .93rem; color: var(--ink-soft); margin: .7rem 0 0; }
-
-  .bignum {
-    display: block;
-    font-family: var(--mono);
-    font-size: clamp(.68rem, 2.1vw, .82rem);
-    line-height: 1.5;
-    color: var(--ink-soft);
-    word-break: break-all;
-    background: var(--paper-warm);
-    border-left: 2px solid var(--accent);
-    padding: .7rem .85rem;
-    margin: .8rem 0 0;
-    max-width: 33rem;
-  }
-  .bignum b { color: var(--ink); font-weight: 600; }
-
-  /* ---------- facts ---------- */
-
-  dl.facts {
-    display: grid;
-    grid-template-columns: minmax(9rem, 12rem) 1fr;
-    gap: 0;
-    margin: 0;
-    max-width: 38rem;
-  }
-  dl.facts dt {
-    font-size: .75rem;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    padding: .85rem 1rem .85rem 0;
-    border-top: 1px solid var(--rule);
-  }
-  dl.facts dd {
-    margin: 0;
-    padding: .85rem 0;
-    border-top: 1px solid var(--rule);
-    color: var(--ink-soft);
-  }
-  @media (max-width: 32rem) {
-    dl.facts { grid-template-columns: 1fr; }
-    dl.facts dt { padding-bottom: .1rem; border-top: 1px solid var(--rule); }
-    dl.facts dd { padding-top: 0; border-top: 0; padding-bottom: .9rem; }
-  }
-
-  /* ---------- link grid ---------- */
-
-  ul.elsewhere { list-style: none; margin: 0; padding: 0; }
-  ul.elsewhere li { border-top: 1px solid var(--rule); }
-  ul.elsewhere li:last-child { border-bottom: 1px solid var(--rule); }
-  ul.elsewhere a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: .3rem 1rem;
-    padding: 1.05rem 0;
-    border: 0;
-  }
-  ul.elsewhere a:hover .el-name { color: var(--accent-lit); }
-  .el-name {
-    font-family: var(--serif);
-    font-size: 1.18rem;
-    flex: 0 0 auto;
-    transition: color .15s;
-  }
-  .el-what { font-size: .9rem; color: var(--ink-faint); flex: 1 1 12rem; }
-  .el-arrow { color: var(--ink-faint); flex: 0 0 auto; }
-
-  /* ---------- footer ---------- */
-
-  footer {
-    border-top: 1px solid var(--rule);
-    padding: 2.5rem 0 4rem;
-    font-size: .87rem;
-    color: var(--ink-faint);
-  }
-  footer p { max-width: 38rem; margin-bottom: .8rem; }
-  footer a { color: var(--ink-soft); }
-
-  @media print {
-    body { background: #fff; color: #000; font-size: 11pt; }
-    a { border: 0; }
-  }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
@@ -562,6 +267,9 @@
       <p>
         Two very different disciplines, one habit: taking a system that nobody has fully mapped and
         working out exactly how it behaves.
+      </p>
+      <p>
+        <a href="/about/">Read the full biography, and which Lara Solomon this is&nbsp;&rarr;</a>
       </p>
     </div>
   </section>
@@ -658,6 +366,10 @@
           </p>
         </li>
       </ol>
+
+      <p class="more">
+        <a href="/oeis/">The problem, the numbers and how the results check out&nbsp;&rarr;</a>
+      </p>
     </div>
   </section>
 
@@ -735,6 +447,10 @@
       A288032 and A288518. Other people share the name; this page describes only her. She also appears
       in some records as <strong>Lara Isaacs</strong> or <strong>Lara Isaacs Solomon</strong> — the
       same person.
+    </p>
+    <p>
+      More: <a href="/about/">About Lara Solomon</a> ·
+      <a href="/oeis/">Counting self-avoiding paths on grid graphs</a>
     </p>
     <p>
       A plain-text version of this page is available at <a href="/index.md">/index.md</a>, and a

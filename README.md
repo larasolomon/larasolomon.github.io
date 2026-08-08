@@ -7,11 +7,15 @@ Personal website for Lara Solomon, served as a static site from GitHub Pages at
 
 | File | Purpose |
 |---|---|
-| `index.html` | The site. Single page, no JavaScript, inline CSS, light/dark aware. Includes schema.org JSON-LD. |
-| `index.md` | Plain-Markdown mirror of the page content, for text-only readers and LLM crawlers. |
+| `index.html` | Home page. No JavaScript anywhere on this site; light/dark aware. Includes schema.org JSON-LD. |
+| `about/index.html` | Full biography, plus the "Which Lara Solomon is this?" question-and-answer section. |
+| `oeis/index.html` | The mathematics in detail — term table, the three OEIS contributions, the checking identity. |
+| `style.css` | Shared stylesheet. Extracted from the original inline `<style>` when the site grew past one page. |
+| `index.md` | Plain-Markdown mirror of the home page, for text-only readers and LLM crawlers. |
 | `llms.txt` | Structured summary for language models ([llmstxt.org](https://llmstxt.org/) convention). |
 | `robots.txt` | Explicitly allows every search and AI crawler by name. |
-| `sitemap.xml` | Sitemap covering the page, the Markdown mirror and `llms.txt`. |
+| `sitemap.xml` | Sitemap covering the three HTML pages. |
+| `<hex>.txt` | IndexNow key file — lets Bing/Copilot be pinged when a page changes. Filename is the key. |
 | `favicon.svg` | LS monogram, browser tab icon. |
 | `apple-touch-icon.png` | 180×180 square icon for iOS home-screen bookmarks. |
 | `og-image.png` | 1200×630 share card used by `og:image` / `twitter:image`. |
@@ -36,9 +40,25 @@ Edit the file, commit, push. GitHub Pages redeploys in about a minute.
 **Keep `index.html` and `index.md` in sync** — they carry the same content in two formats, and a
 crawler reading only one of them should get the same facts. Same for the summary in `llms.txt`.
 
-When content changes, update the date in three places: the `dateModified` field in the JSON-LD block
-and the footer `<time>` in `index.html`, the footer line in `index.md`, the `Last updated` line in
+When content changes, update the date in: the `dateModified` field in the JSON-LD block and the
+footer `<time>` of each HTML page changed, the footer line in `index.md`, the `Last updated` line in
 `llms.txt`, and `<lastmod>` in `sitemap.xml`.
+
+### Rules for the JSON-LD entity graph
+
+The Person node is the point of the whole site — it is what lets search engines and AI assistants
+tell this Lara Solomon apart from the several others. Two rules keep it useful:
+
+- **`sameAs` carries identity profiles only** — other pages *about this person* that she controls:
+  LinkedIn, the OEIS wiki user page, GitHub. It is not a link list. The clinic's and Redrew's
+  websites were removed from it deliberately; they are organisations, not identities, and they are
+  correctly expressed through `worksFor` and `owns` instead. Putting them back weakens the signal.
+- **Every URL in `sameAs` must resolve.** A dead identity link lowers entity confidence rather than
+  raising it. In particular, if the LinkedIn vanity URL ever changes, it must be updated here, in
+  `about/index.html`, in `oeis/index.html`, in `index.md` and in `llms.txt` — five places.
+
+The Person `@id` is `https://larasolomon.com.au/#lara` on every page, so all three pages describe
+one entity rather than three.
 
 ## DNS
 

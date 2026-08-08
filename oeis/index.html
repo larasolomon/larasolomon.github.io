@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lara Solomon — counting self-avoiding paths on grid graphs (OEIS)</title>
+
+<link rel="canonical" href="https://larasolomon.com.au/oeis/">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta name="description" content="Lara Solomon's contributions to the OEIS: the 13th terms of A236753 and A288032, counting self-avoiding paths on the 13x13 grid graph, and 75 new terms for A288518.">
+<meta name="author" content="Lara Solomon">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15140f" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Lara Solomon">
+<meta property="og:title" content="Counting self-avoiding paths on grid graphs — Lara Solomon">
+<meta property="og:description" content="The 13th terms of OEIS A236753 and A288032, contributed by Lara Solomon in July 2026, and how the two results check each other.">
+<meta property="og:url" content="https://larasolomon.com.au/oeis/">
+<meta property="og:locale" content="en_AU">
+<meta property="og:image" content="https://larasolomon.com.au/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://larasolomon.com.au/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["WebPage", "ScholarlyArticle"],
+      "@id": "https://larasolomon.com.au/oeis/#page",
+      "url": "https://larasolomon.com.au/oeis/",
+      "name": "Counting self-avoiding paths on grid graphs",
+      "headline": "Counting self-avoiding paths on grid graphs",
+      "description": "Lara Solomon's contributions to the On-Line Encyclopedia of Integer Sequences: the 13th terms of A236753 and A288032, and 75 additional terms for A288518.",
+      "inLanguage": "en-AU",
+      "datePublished": "2026-08-08",
+      "dateModified": "2026-08-08",
+      "author": { "@id": "https://larasolomon.com.au/#lara" },
+      "about": [
+        { "@type": "Thing", "name": "Enumerative combinatorics" },
+        { "@type": "Thing", "name": "Self-avoiding walk" },
+        { "@type": "Thing", "name": "Grid graph" },
+        { "@type": "Thing", "name": "Integer sequence" }
+      ],
+      "isPartOf": { "@id": "https://larasolomon.com.au/#website" },
+      "breadcrumb": { "@id": "https://larasolomon.com.au/oeis/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://larasolomon.com.au/oeis/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Lara Solomon", "item": "https://larasolomon.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Published mathematics" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://larasolomon.com.au/#website",
+      "url": "https://larasolomon.com.au/",
+      "name": "Lara Solomon",
+      "inLanguage": "en-AU",
+      "publisher": { "@id": "https://larasolomon.com.au/#lara" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://larasolomon.com.au/#lara",
+      "name": "Lara Solomon",
+      "alternateName": ["Lara Isaacs", "Lara Isaacs Solomon"],
+      "url": "https://larasolomon.com.au/",
+      "jobTitle": "Owner and Practice Manager",
+      "description": "Owner and practice manager of Rose Bay Medical Clinic in Rose Bay, Sydney, and a credited contributor to the On-Line Encyclopedia of Integer Sequences.",
+      "disambiguatingDescription": "The Lara Solomon credited in OEIS sequences A236753, A288032 and A288518, who owns and manages Rose Bay Medical Clinic in Rose Bay, New South Wales, Australia.",
+      "knowsAbout": [
+        "Enumerative combinatorics",
+        "Self-avoiding paths",
+        "Grid graphs",
+        "Integer sequences",
+        "Computational mathematics"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/lara-solomon-aa4a6734/",
+        "https://oeis.org/wiki/User:Lara_Solomon",
+        "https://github.com/larasolomon"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://oeis.org/A236753",
+      "name": "A236753: Number of simple (non-intersecting) directed paths on the grid graph P_n X P_n",
+      "url": "https://oeis.org/A236753",
+      "isPartOf": { "@type": "Periodical", "name": "The On-Line Encyclopedia of Integer Sequences", "url": "https://oeis.org/" },
+      "contributor": { "@id": "https://larasolomon.com.au/#lara" },
+      "datePublished": "2026-07-30",
+      "creditText": "a(13) from Lara Solomon, Jul 30 2026"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://oeis.org/A288032",
+      "name": "A288032: Number of (undirected) paths in the n X n grid graph",
+      "url": "https://oeis.org/A288032",
+      "isPartOf": { "@type": "Periodical", "name": "The On-Line Encyclopedia of Integer Sequences", "url": "https://oeis.org/" },
+      "contributor": { "@id": "https://larasolomon.com.au/#lara" },
+      "datePublished": "2026-07-30",
+      "creditText": "a(13) from Lara Solomon, Jul 30 2026"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://oeis.org/A288518",
+      "name": "A288518: Array read by antidiagonals: T(m,n) = number of (undirected) paths in the grid graph P_m X P_n",
+      "url": "https://oeis.org/A288518",
+      "isPartOf": { "@type": "Periodical", "name": "The On-Line Encyclopedia of Integer Sequences", "url": "https://oeis.org/" },
+      "contributor": { "@id": "https://larasolomon.com.au/#lara" },
+      "creditText": "Table of n, a(n) for n = 1..351 contributed by Lara Solomon"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead compact">
+  <div class="wrap">
+    <p class="eyebrow"><a href="/">Lara Solomon</a> &nbsp;/&nbsp; Published mathematics</p>
+    <h1 class="sub">Counting self-avoiding paths on grid graphs</h1>
+    <p class="standfirst">
+      Three contributions to the <strong>On-Line Encyclopedia of Integer Sequences</strong>, all on
+      one stubborn problem — and how two of them check each other.
+    </p>
+
+    <nav class="sections" aria-label="Site">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/oeis/" aria-current="page">Published Mathematics</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="problem" aria-labelledby="problem-h">
+    <div class="wrap">
+      <h2 id="problem-h">The problem</h2>
+      <p>
+        Take an <em>n</em> × <em>n</em> square grid of points, with each point joined to its immediate
+        neighbours up, down, left and right. That object is the <strong>grid graph</strong>
+        P<sub>n</sub> × P<sub>n</sub>. Now count the paths through it that never visit the same point
+        twice — <strong>self-avoiding paths</strong>.
+      </p>
+      <p>
+        The question is easy to state and famously hard to answer. There is no known formula. Nobody
+        has found one, and the general problem of counting self-avoiding walks is one of the
+        long-standing open problems of combinatorics and statistical physics. Every term of these
+        sequences has to be computed, and the computations get worse very fast.
+      </p>
+      <p>
+        How fast is the point. For the 3 × 3 grid there are 653 such paths, a number you could in
+        principle check by hand. For 13 × 13 there are more than 7.7 × 10<sup>38</sup> — a 39-digit
+        number. A machine listing them at one path per nanosecond would need roughly a trillion times
+        the present age of the universe to finish. They cannot be enumerated one at a time; they have
+        to be counted without ever being listed.
+      </p>
+    </div>
+  </section>
+
+  <section id="growth" aria-labelledby="growth-h">
+    <div class="wrap">
+      <h2 id="growth-h">Why each term costs more than the last</h2>
+      <p>
+        This is <a href="https://oeis.org/A236753">A236753</a> — directed self-avoiding paths on the
+        <em>n</em> × <em>n</em> grid — in full. The right-hand column is each term divided by the one
+        before it, and it is the reason the sequence is flagged <code>hard</code>: the growth rate is
+        itself growing.
+      </p>
+
+      <div class="tablewrap">
+        <table class="data">
+          <caption class="visually-hidden">Terms of OEIS A236753 with digit counts and growth ratios</caption>
+          <thead>
+            <tr><th scope="col"><em>n</em></th><th scope="col">a(<em>n</em>)</th><th scope="col">Digits</th><th scope="col">a(<em>n</em>)&nbsp;/&nbsp;a(<em>n</em>−1)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="num">1</td><td>1</td><td>—</td></tr>
+            <tr><td>2</td><td class="num">28</td><td>2</td><td>28</td></tr>
+            <tr><td>3</td><td class="num">653</td><td>3</td><td>23</td></tr>
+            <tr><td>4</td><td class="num">28,512</td><td>5</td><td>44</td></tr>
+            <tr><td>5</td><td class="num">3,060,417</td><td>7</td><td>107</td></tr>
+            <tr><td>6</td><td class="num">873,239,772</td><td>9</td><td>285</td></tr>
+            <tr><td>7</td><td class="num">687,430,009,069</td><td>12</td><td>787</td></tr>
+            <tr><td>8</td><td class="num">1,532,025,110,398,168</td><td>16</td><td>2,229</td></tr>
+            <tr><td>9</td><td class="num">9,829,526,954,625,359,697</td><td>19</td><td>6,416</td></tr>
+            <tr><td>10</td><td class="num">183,563,561,823,425,961,932,572</td><td>24</td><td>18,675</td></tr>
+            <tr><td>11</td><td class="num">10,056,737,067,604,248,527,218,979,485</td><td>29</td><td>54,786</td></tr>
+            <tr><td>12</td><td class="num">1,626,248,896,102,138,091,401,810,358,337,184</td><td>34</td><td>161,707</td></tr>
+            <tr><td>13</td><td class="num">779,903,870,849,450,440,101,587,633,989,096,314,113</td><td>39</td><td>479,572</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        The last row is Lara Solomon's contribution, added to the OEIS on 30 July 2026. The previous
+        term, a(12), had stood since the sequence was created by Jaimal Ichharam in January 2014.
+      </p>
+    </div>
+  </section>
+
+  <section id="contributions" aria-labelledby="contrib-h">
+    <div class="wrap">
+      <h2 id="contrib-h">The three contributions</h2>
+
+      <ol class="sequences">
+        <li>
+          <a href="https://oeis.org/A236753" class="seq-id">A236753</a>
+          <span class="seq-title">Number of simple (non-intersecting) directed paths on the grid graph P<sub>n</sub> × P<sub>n</sub></span>
+          <span class="seq-credit">a(13) — 30 July 2026</span>
+          <p class="seq-note">
+            Created by Jaimal Ichharam, January 2014. Keyword <code>hard</code>. The 13 × 13 value is
+            a 39-digit number:
+          </p>
+          <span class="bignum"><b>779&nbsp;903&nbsp;870&nbsp;849&nbsp;450&nbsp;440&nbsp;101&nbsp;587&nbsp;633&nbsp;989&nbsp;096&nbsp;314&nbsp;113</b></span>
+        </li>
+        <li>
+          <a href="https://oeis.org/A288032" class="seq-id">A288032</a>
+          <span class="seq-title">Number of (undirected) paths in the <em>n</em> × <em>n</em> grid graph</span>
+          <span class="seq-credit">a(13) — 30 July 2026</span>
+          <p class="seq-note">
+            Created by Eric W. Weisstein, June 2017. The undirected companion, contributed the same
+            day:
+          </p>
+          <span class="bignum"><b>389&nbsp;951&nbsp;935&nbsp;424&nbsp;725&nbsp;220&nbsp;050&nbsp;793&nbsp;816&nbsp;994&nbsp;548&nbsp;156&nbsp;972</b></span>
+        </li>
+        <li>
+          <a href="https://oeis.org/A288518" class="seq-id">A288518</a>
+          <span class="seq-title">Array read by antidiagonals: T(m,n) = number of (undirected) paths in the grid graph P<sub>m</sub> × P<sub>n</sub></span>
+          <span class="seq-credit">b-file extended from 276 to 351 terms</span>
+          <p class="seq-note">
+            The general rectangular case, created by Andrew Howroyd in June 2017. The sequence's data
+            file previously held 276 terms — the first 23 antidiagonals, since 1 + 2 + … + 23 = 276.
+            It now holds <strong>351</strong>, or 26 complete antidiagonals: 75 new values covering
+            every rectangle P<sub>m</sub> × P<sub>n</sub> with <em>m</em> + <em>n</em> up to 27.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="check" aria-labelledby="check-h">
+    <div class="wrap">
+      <h2 id="check-h">How the two results check each other</h2>
+      <p>
+        A236753 and A288032 count the same objects with one difference: A236753 counts each path once
+        per direction of travel, A288032 counts it once. Every path with two or more points therefore
+        contributes exactly twice to the directed count and once to the undirected one. The single
+        exceptions are the degenerate one-point paths, of which an <em>n</em> × <em>n</em> grid has
+        exactly <em>n</em><sup>2</sup>: they have no direction to reverse, so they are counted once in
+        both.
+      </p>
+      <p>
+        That gives a hard identity between the two sequences:
+      </p>
+      <p class="bignum identity">
+        <b>A236753(<i>n</i>) &nbsp;=&nbsp; 2 × A288032(<i>n</i>) &nbsp;+&nbsp; <i>n</i><sup>2</sup></b>
+      </p>
+      <p>
+        It holds for every one of the thirteen known terms. At <em>n</em> = 13 it reads
+        2 × 389,951,935,424,725,220,050,793,816,994,548,156,972 + 169 =
+        779,903,870,849,450,440,101,587,633,989,096,314,113 — exact, to all 39 digits.
+      </p>
+      <p>
+        Two sequences created three years apart by different contributors, extended on the same day,
+        agreeing exactly at a scale where a single misplaced path would break the equality. That is
+        the check that makes the pair worth trusting.
+      </p>
+    </div>
+  </section>
+
+  <section id="cite" aria-labelledby="cite-h">
+    <div class="wrap">
+      <h2 id="cite-h">Reference</h2>
+      <p>
+        All three sequences and their credits are on the OEIS, which is the authoritative record:
+      </p>
+      <ul class="plain">
+        <li><a href="https://oeis.org/A236753">oeis.org/A236753</a> — a(13) from Lara Solomon, Jul 30 2026</li>
+        <li><a href="https://oeis.org/A288032">oeis.org/A288032</a> — a(13) from Lara Solomon, Jul 30 2026</li>
+        <li><a href="https://oeis.org/A288518">oeis.org/A288518</a> — b-file, terms 1..351, contributed by Lara Solomon</li>
+        <li><a href="https://oeis.org/search?q=%22Lara+Solomon%22">Every OEIS entry crediting Lara Solomon</a></li>
+      </ul>
+      <p>
+        Note for searchers: an OEIS author search for <code>author:solomon</code> will not find these.
+        The credits sit in the extensions and link fields rather than the author field, so a full-text
+        search for <code>"Lara Solomon"</code> is the one that works.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Written by Lara Solomon, owner and practice manager of
+      <a href="https://www.rosebaymedicalclinic.com.au/">Rose Bay Medical Clinic</a>, Sydney.
+      <a href="/about/">More about her</a>.
+    </p>
+    <p>
+      &copy; 2026 Lara Solomon · Sydney, Australia · Last updated
+      <time datetime="2026-08-08">8 August 2026</time> ·
+      <a href="/">Home</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
