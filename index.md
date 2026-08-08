@@ -18,8 +18,8 @@ and made in Sydney.
 
 Outside of business, she works in enumerative combinatorics. In July 2026 the
 [On-Line Encyclopedia of Integer Sequences](https://oeis.org/) credited her with the thirteenth terms
-of two long-standing sequences counting self-avoiding paths on square grid graphs — results that had
-stood unextended for years, on a problem the encyclopedia classifies as computationally hard.
+of two sequences counting self-avoiding paths on square grid graphs — extending records first
+published in 2014 and 2017, on a problem the encyclopedia classifies as computationally hard.
 
 Two very different disciplines, one habit: taking a system that nobody has fully mapped and working
 out exactly how it behaves.
@@ -95,7 +95,8 @@ grid.
 *Array read by antidiagonals: T(m,n) = number of (undirected) paths in the grid graph P_m × P_n.*
 
 The general rectangular case. Lara extended the sequence's data file from 276 terms to **351** —
-adding three complete antidiagonals of new results to a table that had stood at 23 since 2017.
+three complete new antidiagonals added to a table whose previous 276 terms were the work of Andrew
+Howroyd.
 
 ## At a Glance
 
