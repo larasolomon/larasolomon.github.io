@@ -1,5 +1,7 @@
 # Lara Solomon
 
+![Lara Solomon](https://larasolomon.com.au/profile.jpg)
+
 **Sydney, Australia**
 
 Owner and practice manager of Rose Bay Medical Clinic. Operations and customer management at Redrew

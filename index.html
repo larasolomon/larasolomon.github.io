@@ -75,6 +75,15 @@
       "givenName": "Lara",
       "familyName": "Solomon",
       "url": "https://larasolomon.com.au/",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://larasolomon.com.au/#portrait",
+        "url": "https://larasolomon.com.au/profile.jpg",
+        "contentUrl": "https://larasolomon.com.au/profile.jpg",
+        "width": 432,
+        "height": 432,
+        "caption": "Lara Solomon"
+      },
       "mainEntityOfPage": { "@id": "https://larasolomon.com.au/#page" },
       "jobTitle": ["Owner and Practice Manager", "Operations and Customer Management"],
       "hasOccupation": [
@@ -257,6 +266,19 @@
     padding: clamp(3rem, 9vw, 6.5rem) 0 clamp(2rem, 5vw, 3.5rem);
     border-bottom: 1px solid var(--rule);
   }
+  .portrait {
+    display: block;
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin: 0 0 2.1rem;
+    background: var(--paper-warm);
+  }
+  @media (max-width: 32rem) {
+    .portrait { width: 132px; height: 132px; margin-bottom: 1.6rem; }
+  }
+
   .eyebrow {
     font-family: var(--sans);
     font-size: .72rem;
@@ -491,6 +513,8 @@
 
 <header class="masthead">
   <div class="wrap">
+    <img class="portrait" src="/profile.jpg" width="432" height="432"
+         alt="Lara Solomon" decoding="async" fetchpriority="high">
     <p class="eyebrow">Sydney, Australia</p>
     <h1>Lara&nbsp;Solomon</h1>
     <p class="standfirst">
