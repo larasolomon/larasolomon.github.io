@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!--
+    Only the canonical indexable page is listed. /index.md and /llms.txt are deliberately
+    omitted: they duplicate this page's content for machine readers, and listing them would
+    invite them to be indexed as competing near-duplicate URLs. Both remain crawlable and are
+    linked from the page footer and referenced in robots.txt.
+  -->
   <url>
     <loc>https://larasolomon.com.au/</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://larasolomon.com.au/index.md</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://larasolomon.com.au/llms.txt</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://larasolomon.com.au/og-image.png</image:loc>
+      <image:title>Lara Solomon</image:title>
+      <image:caption>Lara Solomon — Owner and Practice Manager, Rose Bay Medical Clinic, Sydney. Redrew Clothing operations. OEIS contributor.</image:caption>
+    </image:image>
   </url>
 </urlset>

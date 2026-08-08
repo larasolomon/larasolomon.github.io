@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Lara Solomon</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15140f" media="(prefers-color-scheme: dark)">
+<style>
+  :root {
+    --ink: #1c1a18; --ink-soft: #4a453f; --ink-faint: #6f6961;
+    --paper: #faf7f2; --rule: #e0d8cb; --accent-lit: #8c7c63;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece7df; --ink-soft: #b8b0a4; --ink-faint: #8b8377;
+      --paper: #15140f; --rule: #35312a; --accent-lit: #ddcdaf;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    padding: 2rem 1.5rem;
+  }
+  .box { max-width: 34rem; }
+  p.code {
+    font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 1.1rem;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(2.1rem, 7vw, 3.1rem); line-height: 1.1;
+    letter-spacing: -.02em; margin: 0 0 1.1rem;
+  }
+  p.lead { font-family: var(--serif); font-size: 1.13rem; color: var(--ink-soft); margin: 0 0 2rem; }
+  ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  li { border-bottom: 1px solid var(--rule); }
+  li a {
+    display: block; padding: .9rem 0;
+    font-family: var(--serif); font-size: 1.1rem;
+    color: var(--ink); text-decoration: none;
+  }
+  li a:hover { color: var(--accent-lit); }
+  li a span { display: block; font-family: var(--sans); font-size: .87rem; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+  <main class="box">
+    <p class="code">Error 404</p>
+    <h1>That page doesn&rsquo;t exist.</h1>
+    <p class="lead">
+      The link may be out of date, or the address slightly off. Everything on this site lives on a
+      single page.
+    </p>
+    <ul>
+      <li><a href="/">Lara Solomon — home <span>Rose Bay Medical Clinic, Redrew Clothing, OEIS</span></a></li>
+      <li><a href="/#mathematics">Published mathematics <span>OEIS sequences A236753, A288032, A288518</span></a></li>
+      <li><a href="/#elsewhere">Elsewhere <span>LinkedIn, the clinic, Redrew</span></a></li>
+    </ul>
+  </main>
+</body>
+</html>
