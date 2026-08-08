@@ -114,7 +114,7 @@ Howroyd.
 
 ## Elsewhere
 
-- [LinkedIn](https://www.linkedin.com/in/lara-solomon-aa4a6734/) — professional profile and work history
+- [LinkedIn](https://www.linkedin.com/in/lara-solomon-sydney/) — professional profile and work history
 - [Rose Bay Medical Clinic](https://www.rosebaymedicalclinic.com.au/) — general practice: doctors, services, appointments
 - [Redrew Clothing](https://redrewclothing.com/) — sustainable womenswear, designed and made in Sydney
 - [OEIS](https://oeis.org/search?q=%22Lara+Solomon%22) — all sequences crediting Lara Solomon
