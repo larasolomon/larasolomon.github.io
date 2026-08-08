@@ -74,6 +74,14 @@ computation; the OEIS flags the first of these sequences with the keyword `hard`
   (terms 1–276 were from Andrew Howroyd), i.e. adding three complete antidiagonals of new values.
 - [All OEIS sequences crediting Lara Solomon](https://oeis.org/search?q=%22Lara+Solomon%22)
 
+**Method.** The a(13) values were computed by a frontier transfer-matrix search: the grid is swept
+one cell at a time, carrying forward only the state of a 13-cell frontier — which boundary cells are
+occupied and how the partial path fragments crossing the boundary connect — so that configurations
+agreeing on the frontier are merged and counted together rather than enumerated. The arithmetic was
+performed modulo several primes and the exact 39-digit value recovered by the Chinese Remainder
+Theorem. The method was validated by reproducing all 276 previously published values of the parent
+table A288518, which had been computed independently by Andrew Howroyd.
+
 ## Links
 
 - [LinkedIn profile](https://www.linkedin.com/in/lara-solomon-sydney/): professional profile and

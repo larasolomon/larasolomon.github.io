@@ -47,7 +47,9 @@
         { "@type": "Thing", "name": "Enumerative combinatorics" },
         { "@type": "Thing", "name": "Self-avoiding walk" },
         { "@type": "Thing", "name": "Grid graph" },
-        { "@type": "Thing", "name": "Integer sequence" }
+        { "@type": "Thing", "name": "Integer sequence" },
+        { "@type": "Thing", "name": "Transfer-matrix method" },
+        { "@type": "Thing", "name": "Chinese remainder theorem" }
       ],
       "isPartOf": { "@id": "https://larasolomon.com.au/#website" },
       "breadcrumb": { "@id": "https://larasolomon.com.au/oeis/#breadcrumb" }
@@ -82,7 +84,9 @@
         "Self-avoiding paths",
         "Grid graphs",
         "Integer sequences",
-        "Computational mathematics"
+        "Computational mathematics",
+        "Transfer-matrix method",
+        "Chinese remainder theorem"
       ],
       "sameAs": [
         "https://www.linkedin.com/in/lara-solomon-sydney/",
@@ -249,6 +253,33 @@
           </p>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <section id="method" aria-labelledby="method-h">
+    <div class="wrap">
+      <h2 id="method-h">How it was computed</h2>
+      <p>
+        The paths are never enumerated. They are counted by a <strong>frontier transfer-matrix
+        search</strong>: the grid is swept one cell at a time, and the only thing carried forward is
+        the state of the <em>frontier</em> — a boundary of 13 cells recording which of them are
+        currently occupied by a path and how the partial path fragments crossing the boundary are
+        connected to one another. Two partial configurations that agree on the frontier behave
+        identically for the rest of the sweep, so they can be merged and counted together. That
+        collapse is what turns an impossible enumeration into a feasible one.
+      </p>
+      <p>
+        The counts themselves overflow ordinary machine integers long before <em>n</em> = 13, so the
+        arithmetic is carried out modulo several primes and the true 39-digit value reconstructed
+        afterwards by the <strong>Chinese Remainder Theorem</strong>.
+      </p>
+      <p>
+        The result was validated by rerunning the same program over the rectangular case and
+        reproducing <strong>all 276 previously published values</strong> of the parent table
+        <a href="https://oeis.org/A288518">A288518</a> — values computed independently by Andrew
+        Howroyd. A method that reproduces 276 known answers exactly is unlikely to be wrong on the
+        277th.
+      </p>
     </div>
   </section>
 

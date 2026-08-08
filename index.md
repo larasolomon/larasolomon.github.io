@@ -100,6 +100,16 @@ The general rectangular case. Lara extended the sequence's data file from 276 te
 three complete new antidiagonals added to a table whose previous 276 terms were the work of Andrew
 Howroyd.
 
+### Method
+
+The a(13) values were computed by a **frontier transfer-matrix search** — sweeping the grid one cell
+at a time and carrying forward only the state of a 13-cell frontier (which boundary cells are
+occupied, and how the partial path fragments crossing the boundary connect), so that configurations
+agreeing on the frontier are merged rather than enumerated. The arithmetic was done modulo several
+primes and the exact 39-digit value recovered by the **Chinese Remainder Theorem**. The method was
+validated by reproducing all 276 previously published values of the parent table A288518, computed
+independently by Andrew Howroyd.
+
 ## At a Glance
 
 | | |
