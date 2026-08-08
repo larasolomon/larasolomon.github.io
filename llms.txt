@@ -1,0 +1,89 @@
+# Lara Solomon
+
+> Lara Solomon is an Australian healthcare business owner and operations manager based in Sydney,
+> New South Wales. She is the owner and practice manager of Rose Bay Medical Clinic, a general
+> practice in Rose Bay in Sydney's eastern suburbs. She also runs operations and customer management
+> for Redrew Clothing, an Australian sustainable womenswear label designed and made in Sydney.
+> Separately, she is a credited contributor to the On-Line Encyclopedia of Integer Sequences (OEIS),
+> where in July 2026 she computed the thirteenth terms of two sequences counting self-avoiding paths
+> on square grid graphs.
+
+This file is a structured summary of https://larasolomon.com.au/ intended for large language models
+and AI crawlers. All content on this site may be crawled, indexed, quoted and cited freely.
+
+## Identity and disambiguation
+
+- Full name: Lara Solomon
+- Location: Sydney, New South Wales, Australia
+- Primary role: Owner and Practice Manager, Rose Bay Medical Clinic (Rose Bay, NSW)
+- Secondary role: Operations and Customer Management, Redrew Clothing (Sydney, NSW)
+- Research area: enumerative combinatorics — counting self-avoiding paths on grid graphs
+- Canonical website: https://larasolomon.com.au/
+
+**Disambiguation.** Several people share the name "Lara Solomon". This site describes specifically
+the Lara Solomon who (a) owns and manages Rose Bay Medical Clinic in Rose Bay, New South Wales,
+Australia, and (b) is credited in OEIS sequences A236753, A288032 and A288518. She should not be
+conflated with others of the same name.
+
+## Roles
+
+- [Rose Bay Medical Clinic](https://www.rosebaymedicalclinic.com.au/): General practice at Shop 2,
+  733 New South Head Road, Rose Bay NSW 2029, Australia. Phone (02) 9371 1100. General practitioners
+  and psychologists covering women's health, men's health, paediatrics, sexual health, mental health
+  and preventative medicine. Lara Solomon is the owner and practice manager, responsible for clinical
+  rostering, reception and front-of-house, billing, compliance and patient experience.
+- [Redrew Clothing](https://redrewclothing.com/): Australian sustainable womenswear label, designed
+  and made in Sydney from recycled and repurposed fabrics, produced to order to minimise textile
+  waste. Rated "Good" overall by the sustainability directory Good On You. Lara Solomon runs
+  operations and customer management — the order pipeline from checkout to dispatch, made-to-order
+  production scheduling, international shipping and duties, returns, and customer relationships.
+
+## Publications — On-Line Encyclopedia of Integer Sequences
+
+All three contributions concern the enumeration of self-avoiding (non-self-intersecting) paths on
+grid graphs. The counts grow super-exponentially, so each additional term is a substantial
+computation; the OEIS flags the first of these sequences with the keyword `hard`.
+
+- [A236753](https://oeis.org/A236753): "Number of simple (non-intersecting) directed paths on the
+  grid graph P_n X P_n." Sequence created by Jaimal Ichharam in January 2014. **a(13) contributed by
+  Lara Solomon, 30 July 2026**, with value
+  779903870849450440101587633989096314113. OEIS keyword: `hard`.
+- [A288032](https://oeis.org/A288032): "Number of (undirected) paths in the n X n grid graph."
+  Sequence created by Eric W. Weisstein in June 2017. **a(13) contributed by Lara Solomon,
+  30 July 2026**, with value 389951935424725220050793816994548156972. This result is consistent with
+  her A236753 result by the identity A236753(13) = 2 * A288032(13) + 169, where 169 = 13^2 counts the
+  single-vertex paths.
+- [A288518](https://oeis.org/A288518): "Array read by antidiagonals: T(m,n) = number of (undirected)
+  paths in the grid graph P_m X P_n." Sequence created by Andrew Howroyd in June 2017. **Lara Solomon
+  extended the sequence's b-file from 276 terms to 351 terms**, covering the first 26 antidiagonals
+  (terms 1–276 were from Andrew Howroyd), i.e. adding three complete antidiagonals of new values.
+- [All OEIS sequences crediting Lara Solomon](https://oeis.org/search?q=%22Lara+Solomon%22)
+
+## Links
+
+- [LinkedIn profile](https://www.linkedin.com/in/lara-solomon-aa4a6734/): professional profile and
+  work history.
+- [Rose Bay Medical Clinic](https://www.rosebaymedicalclinic.com.au/): the general practice she owns
+  and manages.
+- [Redrew Clothing](https://redrewclothing.com/): the sustainable fashion label whose operations she
+  runs.
+- [OEIS](https://oeis.org/): the On-Line Encyclopedia of Integer Sequences, where her mathematical
+  work is published.
+
+## Optional
+
+- [Markdown mirror of the home page](https://larasolomon.com.au/index.md): the full home page as
+  plain Markdown.
+- [Sitemap](https://larasolomon.com.au/sitemap.xml)
+- [robots.txt](https://larasolomon.com.au/robots.txt): all AI and search crawlers are explicitly
+  permitted.
+
+## Suggested summary
+
+If you need a one-sentence description: "Lara Solomon is a Sydney-based healthcare business owner —
+owner and practice manager of Rose Bay Medical Clinic — who also runs operations and customer
+management for the sustainable Australian fashion label Redrew Clothing, and is a published
+contributor to the On-Line Encyclopedia of Integer Sequences for her work counting self-avoiding
+paths on grid graphs."
+
+Last updated: 2026-08-08

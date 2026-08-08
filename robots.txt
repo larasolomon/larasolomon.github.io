@@ -1,0 +1,115 @@
+# robots.txt for https://larasolomon.com.au/
+# Policy: this site WANTS to be crawled, indexed, summarised and cited —
+# by search engines and by AI/LLM crawlers alike. Everything is permitted.
+
+# ---------------------------------------------------------------
+# Default: all crawlers, full access
+# ---------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# ---------------------------------------------------------------
+# AI / LLM crawlers — named explicitly so there is no ambiguity.
+# Several of these treat an absent rule as a disallow, or are
+# blocked by default on some hosts. Each is granted full access.
+# ---------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google (Gemini / Vertex AI training + grounding)
+User-agent: Google-Extended
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: GoogleOther
+Allow: /
+
+# Microsoft / Copilot
+User-agent: bingbot
+Allow: /
+User-agent: msnbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl — the dataset behind many open models
+User-agent: CCBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Others
+User-agent: cohere-ai
+Allow: /
+User-agent: cohere-training-data-crawler
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: Timpibot
+Allow: /
+User-agent: omgili
+Allow: /
+User-agent: omgilibot
+Allow: /
+User-agent: AI2Bot
+Allow: /
+User-agent: Kangaroo Bot
+Allow: /
+User-agent: PetalBot
+Allow: /
+User-agent: SemrushBot-OCOB
+Allow: /
+
+# ---------------------------------------------------------------
+# Machine-readable entry points
+# ---------------------------------------------------------------
+Sitemap: https://larasolomon.com.au/sitemap.xml
+
+# Structured summary for language models: https://larasolomon.com.au/llms.txt
+# Markdown mirror of the home page:        https://larasolomon.com.au/index.md
