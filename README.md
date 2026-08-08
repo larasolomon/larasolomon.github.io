@@ -12,8 +12,22 @@ Personal website for Lara Solomon, served as a static site from GitHub Pages at
 | `llms.txt` | Structured summary for language models ([llmstxt.org](https://llmstxt.org/) convention). |
 | `robots.txt` | Explicitly allows every search and AI crawler by name. |
 | `sitemap.xml` | Sitemap covering the page, the Markdown mirror and `llms.txt`. |
+| `favicon.svg` | LS monogram, browser tab icon. |
+| `apple-touch-icon.png` | 180×180 square icon for iOS home-screen bookmarks. |
+| `og-image.png` | 1200×630 share card used by `og:image` / `twitter:image`. |
 | `CNAME` | Tells GitHub Pages to serve the site at `larasolomon.com.au`. |
 | `.nojekyll` | Disables Jekyll so `index.md` is served as raw Markdown instead of being rendered. |
+
+### Regenerating the images
+
+Both PNGs are rendered from SVG with macOS built-ins (no image libraries required). `qlmanage`
+always writes a square thumbnail, so the share card is authored on a 1200×1200 canvas with the card
+content vertically centred, then cropped to the middle 630 rows:
+
+```bash
+qlmanage -t -s 1200 -o out og.svg && sips -c 630 1200 out/og.svg.png --out og-image.png
+qlmanage -t -s 180 -o out favicon.svg && cp out/favicon.svg.png apple-touch-icon.png
+```
 
 ## Editing
 
